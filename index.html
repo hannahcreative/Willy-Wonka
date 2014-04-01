@@ -13,13 +13,7 @@
 <body data-duration="10">
 
 <header id="intro" class="slide incomplete">
-	<h1>CSS Presentation for Girls Learning Code
-
-		<!-- <object data="logo.svg" width="100%" type="image/svg+xml">
-			<img src="logo.png" alt="CSSS: CSS-based SlideShow System" />
-		</object> -->
-	</h1>
-	<p class="attribution">By Hannah and Jess</p>
+	<h1>CSS Presentation for Girls Learning Code</h1>
 </header>
 
 <section>
@@ -28,12 +22,12 @@
 	</header>
 	
 	<section class="slide" title="CSSS: Introduction">
-		<h2>How do you make a website?</h2>
+		<h3>How do you make a website?</h3>
 		<!-- <p>A simple framework for building presentations with modern web standards</p> -->
 		<ul>
 			<li class="delayed">A. Draw it on paper</li>
-			<li class="delayed">B. Use a writing program like Microsoft Word.</li>
-			<li class="delayed">C. Yell at the computer until it makes a website.</li>
+			<li class="delayed">B. Use a writing program like Microsoft Word</li>
+			<li class="delayed">C. Yell at the computer until it makes a website</li>
 			<li class="delayed">D. Write Code</li>
 		</ul>
 	</section>
@@ -53,7 +47,10 @@
 
 	<header class="slide">
 		<h2>What does Code look like?</h2>
+		<img class="delayed" src="img/notcode.jpg" alt="an exmaple of NOT code">
 	</header>
+
+
 
 	<section class="slide">
 		<h2>HTML</h2>
@@ -63,15 +60,19 @@
 
 	<section class="slide">
 		<h2>Browsers</h2>
+		<h3 class="delayed"><img src="img/browsericon.png"></h3>
 		<h3 class="delayed">They show us websites. They speak HTML.</h3>
-		<h3 class="delayed">(insert images of browser icons)</h3>
 		<h4 class="delayed">We write HTML because that's the language our browsers understand.</h4>
 	</section>
 
 	<section class="slide">
 		<h2>Sublime Text</h2>
 		<h3 class="delayed">A program we use to write HTML and CSS code</h3>
-		<h3 class="delayed">Sublime text talks to the browser with HTML code.</h3>
+		<h3 class="delayed">It talks to the browser with HTML code</h3>
+	</section>
+
+	<section class="slide">
+		<h3><img src="img/sublime.png" alt=""></h3>
 	</section>
 
 	<section class="slide">
@@ -79,7 +80,15 @@
 			<p class="delayed"><img src="img/elementexample.png" alt="diagram of HTML element"></p>
 			<p class="delayed">We use tags to make elements.</p>
 			<p class="delayed">There are many types of tags and elements, they make up the entire web page.</p>
-			<p class="delayed">Tags are important because they help us to connect HTML and CSS.</p>
+		<!-- 	<p class="delayed">Tags are important because they help us to connect HTML and CSS.</p>
+ -->
+	</section>
+
+	<section class="slide">
+		<h3>Some examples of elements...</h3>
+		<textarea class="snippet delayed" data-raw>
+			<p>This is a heading.</p>
+		</textarea>
 	</section>
 </section>
 
@@ -96,62 +105,96 @@
 	<section class="slide">
 		<h2>So, where do we write CSS anyway?</h2>
 		<ul>
-			<li class="delayed">There is a couple different places you can write CSS code so that it communicates with the HTML code and the browser to make a webpage.</li>
 			<li class="delayed">Today we will be writing our CSS code in an external style sheet.</li>
-			<!-- <li class="delayed">You can open up style.css</li> -->
+			<li class="delayed">That means we will work with two files</li>
+			<li class="delayed">.html file (we have already made this for you)</li>
+			<li class="delayed">.css file (we have already linked these)</li>
 		</ul>
 	</section>	
 
 	<section class="slide">
-		<h2>Now it's time to meet CSS.</h2>
+		<h2>Now it's time to meet CSS</h2>
 		<ul>
-			<li class="delayed">The first thing to know about CSS is that it is made up of some rules.</li>
+			<li class="delayed">CSS is made up of a few rules</li>
 			<li class="delayed">To make CSS work properly you need to follow the basic rules.</li>
-		
 		</ul>
 	</section>
 
 	<section class="slide">
-		<h2><img src="img/css1.png" alt="css syntax"></h2>
+		<!-- <h2><img src="img/css1.png" alt="css syntax"></h2> -->
 		<p class="delayed">There are two main parts to a CSS rule</p>
 		<p class="delayed">Selector and Declaration</p>
 		<p class="delayed">It's important to write your CSS in the correct order</p>
+		<textarea class="snippet delayed" data-raw>
+			p {
+				color: red;
+			}
+		</textarea>
 	</section>
 
 	<section class="slide">
-		<h2>How to target HTML elements with CSS</h2>
+		<h2>So how do HTML and CSS talk to eachother anyways?</h2>
 		<p>Time to play a little game! (Basket game!)..During the game introduce CSS specificity/inheritance</p>
 		<p>After basket game play a little CSS scavanger hunt</p>
 	</section>
 
 	<section class="slide">
-		<h2>To Review...</h2>
+		<h3>To Review...</h3>
 		<p class="delayed">We use selectors to target certain elements on the web page</p>
 		<p class="delayed">The most basic kind of selector is to target all elements on a page</p>
-		<p class="delayed"><img src="img/css1.png" alt="diagram of HTML element"></p>
-		<p class="delayed">Notice how you just use the same HTML selector, but take away the < > </p>
+		<textarea class="snippet delayed" data-raw>
+			h3 {
+				color: red;
+			}
+			p {
+				background-color:green;
+			}
+		</textarea>
+		<p class="delayed">Notice how you use the same HTML selector, but take away the < > </p>
 
 	</section>
 
 	<section class="slide">
-		<h4>But what if you want to target something more specific? Like just paragraphs in a certain section?</h4>
+		<h4>But what if you want to target something more specific? Like only paragraphs in a certain section?</h4>
 		<p class="delayed">Well, you would use classes or spans!</p>
 	</section>
 
 	<section class="slide">
-		<h2>HUH?! What's a class or a span?</h2>
-		<p class="dealyed">A class lets you select a certain chunk of HTML code and change it.</p>
-		<p class="delayed">A span lets you select one word in a sentence and change just that word.</p>
-		<p class="delayed">Classes and spans are both extra tags that are added to the HTML code, just so that you can style later</p>
-		<p class="delayed">SHOW EXAMPLE HERE</p>
+		<h2>HUH?!</h2>
+		<h3 class="delayed">What's a class or a span?</h3>
+		<p class="delayed">A class lets you select a certain chunk of HTML code and change it, (like a whole paragraph!)</p>
+		<p class="delayed">A span lets you select one word in a sentence and just change that word.</p>
+	</section>
+	
+	<section class="slide">
+		<h3>Classes and spans are both added to the HTML code</h3>
+		<p>Here's an example</p>
+		<textarea class="snippet delayed" data-raw><p class="red">Here's an example</p></textarea>	
+		<textarea class="snippet delayed" data-raw>
+			p {
+				color:red;
+			}
+		</textarea>	
+	</section>
+	<section class="slide">
+		<h2><img src="img/keyboard.png" alt=""></h2>
+	</section>
+</section>
+
+<section>
+	<section class="slide">
+		<h2>Let's get started!</h2>
+		<p>Open index.html and style.css</p>
 	</section>
 
-	<section class="slide">
-		<img src="img/keyboard.png" alt="">
+	<section>
+		
 	</section>
 
 </section>
 
+
+			
 <!-- 	
 	<section class="slide" id="navigation">
 		<h2>Navigation</h2>
@@ -168,7 +211,7 @@
 	</section> -->
 
 
-<section>
+<!-- <section>
 	<header class="slide">
 		<h1>THE NEXT TWO SLIDES WILL BE IMAGES</h1>
 	</header>
@@ -329,7 +372,7 @@ document.addEventListener('DOMAttrModified',function(e) {
       Placeholder.update(node);
 }, false);</code></pre>
 	</section>
-</section>
+</section> -->
 <footer class="slide" title="The End">
 	<h2>Thank you!</h2>
 	<p>Get it or contribute at <a href="http://github.com/LeaVerou/CSSS">http://github.com/LeaVerou/CSSS</a></p>
