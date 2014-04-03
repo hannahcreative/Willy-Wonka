@@ -13,7 +13,7 @@
 <body data-duration="10">
 
 <header id="intro" class="slide incomplete">
-	<!-- <h1>CSS</h1> -->
+	<h1>CSS</h1>
 </header>
 
 <section>
@@ -53,9 +53,8 @@
 
 
 	<section class="slide">
-		<h2>HTML</h2>
-		<h3 class="delayed">The Website Language</h2>
-		<h2 class="delayed"><img src="img/htmlex.png"></h2>
+		<h3>HTML - The Website Language</h3>
+		<h3 class="delayed"><img src="img/htmlex.png"></h3>
 	</section>
 
 	<section class="slide">
@@ -93,7 +92,7 @@
 	<section class="slide">
 		<h3>Some examples of elements...</h3>
 		<textarea class="snippet delayed" data-raw>
-		<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
 		</textarea>
 	</section>
 </section>
@@ -111,7 +110,7 @@
 	<section class="slide">
 		<h2>So, where do we write CSS anyway?</h2>
 		<ul>
-			<li class="delayed">Today we will be writing our CSS code in an external style sheet.</li>
+			<li class="delayed">Today we will be writing our CSS code in an external style sheet</li>
 			<li class="delayed">That means we will work with two files</li>
 			<li class="delayed">.html file (we have already made this for you)</li>
 			<li class="delayed">.css file (we have already linked these)</li>
@@ -129,25 +128,34 @@
 	<section class="slide">
 		<p>There are two main parts to a CSS rule</p>
 		<p class="delayed">Selector and Declaration</p>
-		<p class="delayed">It's important to write your CSS in the correct order</p>
+
 		<textarea class="snippet delayed" data-raw>
-			p {
-				font-size: 30px;
-			}
+p {
+	font-size: 30px;
+}
 		</textarea>
 		<p class="presenter-notes">Also show exmaples of font-family, font-weight, color (trick them), letter-spacing</p>
 	</section>
 
 	<section class="slide">
-		<p>this slide shows property and value</p>
+		<p>Property and Value</p>
+		<p class="delayed"><img src="img/propval.png" alt=""></p>
 	</section>
 
 	<section class="slide">
-		<p>introduce specificity and inheritance</p>
+		<p class="delayed">In the last slide there were several properties and values</p>
+		<p class="delayed">CSS chooses the most specific one</p>
+		<p class="delayed">Also, rules that you write near the beggining of your CSS are applied to other elements on the page</p>
+		<textarea class="snippet delayed" data-raw>
+body {
+	color:blue;
+}
+		</textarea>
 	</section>
 
 	<section class="slide">
-		<p>Let's take a look at an example and see if we can find all of the CSS that have been applied to the HTML.</p>
+		<p>Let's take a look at an example and see if we can find all of the CSS that has been applied to the HTML</p>
+		<p class="delayed">Someone suggest a website!</p>
 	</section>
 
 	<section class="slide">
@@ -161,12 +169,12 @@
 		<p class="delayed">We use selectors to target certain elements on the web page</p>
 		<p class="delayed">The most basic kind of selector is to target all elements on a page</p>
 		<textarea class="snippet delayed" data-raw>
-			h3 {
-				color: red;
-			}
-			p {
-				background-color:green;
-			}
+h3 {
+	color: ;
+}
+p {
+	background-color:;
+}
 		</textarea>
 		<p class="delayed">Notice how you use the same HTML selector, but take away the < > </p>
 
@@ -186,12 +194,12 @@
 	
 	<section class="slide">
 		<h3>Classes and spans are both added to the HTML code</h3>
-		<p class="red">Here's an example</p>
-		<textarea class="snippet delayed" data-raw><p class="red">Here's an example</p></textarea>	
+		<p class="changeMe">Here's an example</p>
+		<textarea class="snippet delayed" data-raw><p class="changeMe">Here's an example</p></textarea>	
 		<textarea class="snippet delayed" data-raw>
-			p {
-				color:red;
-			}
+.changeMe {
+	color:red;
+}
 		</textarea>	
 	</section>
 
@@ -207,51 +215,54 @@
 <section>
 	<section class="slide">
 		<h2>Let's get started!</h2>
-		<p>Open index.html and style.css</p>
 	</section>
 
 	<section class="slide">
 		<p>Since we know that CSS listens to rules in order, we'll start with some general styles and then do more specific ones later.</p>
 	</section>
 
-	<section class="slide">
-		<p>We only style things that are inside the body.  Does anyone see where the < body > is?</p>
-	</section>
 
 	<section class="slide">
 		<h3>Let's change the background-color of the body.</h3>
-		<p class="delayed">Choose a colour from this cool website called http://colors.neilorangepeel.com</p>
+		<h3 class="delayed">You can either write the color name, or use a hex-code!</h3>
+		<p class="delayed">In chrome, go to www.colorpicker.com</p>
 	</section>
 
 	<section class="slide">
 		<h3>Who remembers how to write CSS to target the body?</h3>
 		<textarea class="snippet delayed" data-raw>
-			body {
-				background-color: ;
-			}
+body {
+	background-color: ;
+}
 		</textarea>
 		<p class="presenter-notes">Which element to target body?</p>
 	</section>
 
 	<section class="slide">
 		<p>Widths and Heights</p>
+		<textarea class="snippet delayed" data-raw>
+.div {
+	width:
+	height:
+}
+		</textarea>
 	</section>
 
 	<section class="slide">
 		<h2>Fonts!</h2>
 		<p>Who can explain what a font is?</p>
 		<p class="ex delayed">I'm an example of font!</p>
-		<textarea class="snippet delayed" data-raw>
-			p.ex {
-			font-family: sans-serif;
-			}
+		<textarea class="snippet" data-raw>
+p.ex {
+font-family: sans-serif;
+}
 		</textarea>
-
+		<p class="presenter-notes">Pixels - measurment unit, our monitors are measured in pixels</p>
 		<p class="presenter-notes">Discuss font family, (backup font)</p>
 	</section>
 
 	<section class="slide">
-		<h3>There are a many other styles you can apply to fonts in CSS</h3>
+		<h3>There are many other styles you can apply to fonts in CSS</h3>
 		<p class="delayed">font-weight</p>
 		<p class="delayed">font-size</p>
 		<p class="delayed">font-color?</p>
@@ -261,50 +272,65 @@
 
 	<section class="slide">
 		<h3>Padding and Margin</h3>
+		<h4 class="delayed">Provide space between elements on your page so everything isn't squished together.
+		<h4 class="delayed">Margin adds space on the OUTSIDE of an element.</h4>
+		<h4 class="delayed">Padding adds space on the INSIDE of an element.</h4>
 		<textarea class="snippet delayed" data-raw>
-			(live code example and discuss here)
+(live code example and discuss here)
 		</textarea>
 	</section>
 
 	<section class="slide">
 		<h3>Borders</h3>
+		<p class="delayed">Remember to set pixels, color, and type.</p>
 		<textarea class="snippet delayed" data-raw>
-			(live code example and discuss here)
+border-width:10px;
+border-color:red;
+border-style:solid;
 		</textarea>
+		<p class="presenter-notes">Other than solid, there is also dotted, dashed, and groove</p>
 	</section>
 
 	<section class="slide">
 		<h3>Floats</h3>
+		<p class="delayed">Floats are an important part of CSS that help you align your elements to either the right or the left</p>
+		<p class="delayed">What if we want elements to be side by side?</p>
 		<textarea class="snippet delayed" data-raw>
-			(live code example and discuss here)
+(live code example and discuss here)
 		</textarea>
 	</section>
 
 	<section class="slide">
 		<h3>Border-radius</h3>
+		<p class="delayed">Border-radius allows you to create rounded corners with CSS!</p>
+		<p class="delayed">We can even make a circle from a square image</p>
 		<textarea class="snippet delayed" data-raw>
-			(live code example and discuss here)
+(live code example and discuss here)
 		</textarea>
 	</section>
 
 	<section class="slide">
 		<h3>Lists!</h3>
+		<p class="delayed">Let's apply some style to the lists</p>
+		<p class="delayed"></p>
 		<textarea class="snippet delayed" data-raw>
-			(live code example and discuss here)
+ul {
+list-style-image:url(http://wes.io/K8oo/yellow-bullet.gif);
+}
 		</textarea>
 	</section>
 
 	<section class="slide">
 		<h3>Absolute Positioning</h3>
 		<textarea class="snippet delayed" data-raw>
-			(live code example and discuss here)
+(live code example and discuss here)
 		</textarea>
 	</section>
 
 	<section class="slide">
 		<h3>Animations</h3>
 		<textarea class="snippet delayed" data-raw>
-			(live code example and discuss here)
+(live code example and discuss here)
 		</textarea>
 	</section>
 
