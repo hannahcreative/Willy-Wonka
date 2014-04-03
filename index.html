@@ -173,7 +173,7 @@ h3 {
 	color: ;
 }
 p {
-	background-color:;
+	background-color: ;
 }
 		</textarea>
 		<p class="delayed">Notice how you use the same HTML selector, but take away the < > </p>
@@ -240,10 +240,12 @@ body {
 
 	<section class="slide">
 		<p>Widths and Heights</p>
+		<div class="box"></div>
 		<textarea class="snippet delayed" data-raw>
-.div {
-	width:
-	height:
+.box {
+	width:50px;
+	height:50px;
+	background:yellow;
 }
 		</textarea>
 	</section>
@@ -275,9 +277,20 @@ font-family: sans-serif;
 		<h4 class="delayed">Provide space between elements on your page so everything isn't squished together.
 		<h4 class="delayed">Margin adds space on the OUTSIDE of an element.</h4>
 		<h4 class="delayed">Padding adds space on the INSIDE of an element.</h4>
+	</section>
+
+	<section class="slide">
+		<div class="box"></div>
 		<textarea class="snippet delayed" data-raw>
-(live code example and discuss here)
+.box {
+	width:100px;
+	height:100px;
+	background-color:blue;
+	padding:;
+	margin:;
+}
 		</textarea>
+	<p class="presenter-notes">Remember to mention paddingTRBL and maringTRBL</p>
 	</section>
 
 	<section class="slide">
@@ -295,8 +308,28 @@ border-style:solid;
 		<h3>Floats</h3>
 		<p class="delayed">Floats are an important part of CSS that help you align your elements to either the right or the left</p>
 		<p class="delayed">What if we want elements to be side by side?</p>
+	</section>
+
+	<section class="slide">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
 		<textarea class="snippet delayed" data-raw>
-(live code example and discuss here)
+.box1 {
+	width:100px;
+	height:100px;
+	background: red;
+}
+.box2 {
+	width:100px;
+	height:100px;
+	background: blue;
+}
+.box3 {
+	width:100px;
+	height:100px;
+	background: yellow;
+}
 		</textarea>
 	</section>
 
@@ -304,8 +337,14 @@ border-style:solid;
 		<h3>Border-radius</h3>
 		<p class="delayed">Border-radius allows you to create rounded corners with CSS!</p>
 		<p class="delayed">We can even make a circle from a square image</p>
+		<div class="circle"></div>
 		<textarea class="snippet delayed" data-raw>
-(live code example and discuss here)
+.circle {
+	width:100px;
+	height:100px;
+	background-color:red;
+	border-radius:0 0 0 0;
+}
 		</textarea>
 	</section>
 
@@ -320,15 +359,16 @@ list-style-image:url(http://wes.io/K8oo/yellow-bullet.gif);
 		</textarea>
 	</section>
 
+
 	<section class="slide">
-		<h3>Absolute Positioning</h3>
+		<h3>Animations</h3>
 		<textarea class="snippet delayed" data-raw>
 (live code example and discuss here)
 		</textarea>
 	</section>
 
 	<section class="slide">
-		<h3>Animations</h3>
+		<h3>Absolute Positioning</h3>
 		<textarea class="snippet delayed" data-raw>
 (live code example and discuss here)
 		</textarea>
